@@ -1,0 +1,101 @@
+\documentclass{beamer}
+\usetheme{Copenhagen}
+
+
+
+\title{Extracting Interview Recordings}
+\author{Jack Mathieson}
+\subtitle{Macquarie University}
+\date{November 2019}
+
+\begin{document}
+
+\maketitle
+
+\section{}
+\begin{frame}{The Problem...Time}
+Issues with transcribing interview recordings:
+\begin{columns}
+\begin{column}{0.5\textwidth}
+
+-Take too much time to listen to 
+
+-Usually cost per hour to transcribe by transcription services.
+
+-Most interviews only yield a small but vital piece of information captured in only a few minutes
+\end{column}
+\begin{column}{0.5\textwidth}
+\centering
+\includegraphics[scale=0.15]{Pictures/Clock.png}
+
+\includegraphics[scale=0.02]{Pictures/Dollarsign.png}
+
+\includegraphics[scale=0.1]{Pictures/Sprout.png}
+\end{column}
+\end{columns}
+
+What is needed is a way to find the key moments in a recording and only send THAT short extraction to be transcribed.
+
+\end{frame}
+
+
+\begin{frame}{The Solution: Extract with R}
+
+Over the past semester I developed a simple code to extract the desired section of recording from an audio file. The code reads on Wav and MP3 files and is used in Rstudio.
+
+\
+\begin{columns}
+\begin{column}
+\centering
+\includegraphics[scale=0.3]{Pictures/Rlogo.png}
+\end{column}
+\begin{column}
+\centering
+\includegraphics[scale=0.3]{Pictures/Code.png}
+\end{column}
+\begin{column}
+\centering
+\includegraphics[scale=0.5]{Pictures/Cutting.png}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}{Example Procedure}
+\begin{enumerate}[I]
+    \item{Record Interview}
+\begin{enumerate}
+    \item bookmark significant times
+\end{enumerate}
+    \item{Download Recording}
+    \item{Execute Code in Rstudio}
+\begin{enumerate}
+    \item insert bookmarked time slots
+    \item{execute code according to mp3 or Wav file}
+\end{enumerate}
+    \item{Transcribe Extracted Recording}
+    \item{\textbf{Transcription Ready}}
+\end{enumerate}
+\    
+
+\centering Shorter, Cheaper, Sharper
+\end{frame}
+
+
+\begin{frame}{Image References}
+-https://www.r-project.org/logo/
+
+-http://clipartbarn.com/money-sign-clip-art_7199/
+
+-https://publicdomainvectors.org/en/free-clipart/Wall-clock-silhouette/57274.html
+
+-https://www.iconfinder.com/icons/2085385/gardening_growing_plant_plant_growing_icon
+
+-https://apkpure.com/video-cutter-trim-cut-video/com.ivideocuttertrrimmer.cutvideo
+
+-https://github.com/MQ-FOAR705/Jack-Mathieson-PoC-R-Script/blob/master/Extract%20Recording%20Wav%20and%20MP3.R
+    
+\end{frame}
+
+\end{document}
